@@ -1,0 +1,137 @@
+/* Réinitialisation de quelques styles par défaut */
+body, h1, h2, h3, p, ul, li, figure, figcaption {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0d0d0d;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo img {
+    max-height: 50px; /* Adjust the size of your logo */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #00aaff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#search-bar {
+    display: flex;
+}
+
+#search-bar input[type='text'] {
+    padding: 0.5em;
+    margin-right: 0.5em;
+    border: none;
+    border-radius: 5px;
+}
+
+#search-bar button {
+    padding: 0.5em 1em;
+    background-color: #00aaff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+main {
+    padding: 2em;
+}
+
+#banner img {
+    width: 100%;
+    height: auto;
+    display: block; /* This will remove any extra space below the image */
+}
+
+#latest-articles {
+    margin-top: 2em;
+}
+
+#latest-articles h2 {
+    color: #00aaff;
+    margin-bottom: 1em;
+}
+
+#latest-articles article {
+    background-color: #1a1a1a;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+}
+
+#latest-articles article h3 {
+    color: #00aaff;
+}
+
+#latest-articles article p {
+    color: #cccccc;
+}
+
+#latest-articles article a {
+    display: inline-block;
+    margin-top: 1em;
+    text-decoration: none;
+    background-color: #00aaff;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #0d0d0d;
+    color: #ffffff;
+    text-align: center;
+    padding: 1em 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Ajouter des styles responsifs */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 1em;
+    }
+
+    nav ul li {
+        margin-bottom: 0.5em;
+    }
+
+    #search-bar {
+        flex-direction: column;
+    }
+
+    #search-bar input[type='text'] {
+        margin-bottom: 0.5em;
+    }
+}
